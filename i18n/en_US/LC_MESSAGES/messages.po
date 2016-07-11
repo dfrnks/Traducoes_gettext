@@ -19,4 +19,4 @@ msgstr ""
 
 #: index.php:13
 msgid "string_teste"
-msgstr "Teste de texto"
+msgstr "text english"

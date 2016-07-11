@@ -10,14 +10,11 @@
 # msgfmt messages.po
 # Compilar
 
-// I18N support information here
-$language = 'pt_BR';
-putenv("LANG=$language");
-setlocale(LC_ALL, $language);
-
-// Set the text domain as 'messages'
-$domain = 'messages';
-bindtextdomain($domain, "i18n");
-textdomain($domain);
+//putenv('LANGUAGE='. 'en_US');
+putenv('LANGUAGE='. 'pt_BR');
+setlocale(LC_ALL, "C.UTF-8");
+bindtextdomain('messages', __DIR__ . '/i18n');
+bind_textdomain_codeset('messages', 'UTF-8');
+textdomain('messages');
 
 echo _("string_teste");
