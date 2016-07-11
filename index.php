@@ -1,5 +1,15 @@
 <?php
 
+# http://www.onlamp.com/pub/a/php/2002/06/13/php.html
+
+# xgettext -n *.php
+# Mapear
+
+# Traduzir
+
+# msgfmt messages.po
+# Compilar
+
 // I18N support information here
 $language = 'pt_BR';
 putenv("LANG=$language");
